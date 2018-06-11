@@ -15,11 +15,12 @@ namespace AutoMeasurePCB_WidthLength_1
         public Form1()
         {
             InitializeComponent();
+
+            DataGridViewRowCollection rows = dataGridView1.Rows;
+            rows.Add(new Object[] { "TOP SM", 26.3 });
+            rows.Add(new Object[] { "Cu L1", 18.3 });
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
     }
 }
